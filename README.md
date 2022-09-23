@@ -1,44 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React ToDo - Exercice
 
-## Available Scripts
+Pour cet exercice, vous allez revisiter un grand classique de la programmation : **une ToDo liste ✅**
 
-In the project directory, you can run:
+Comme pour les exercices précédents, **nous avons initialisé le projet pour vous** afin que vous puissiez vous concentrer sur les concepts suivants :
 
-### `yarn start`
+- Passage de props
+- Gestion de state
+- Typage de state
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ce projet utilise [Tailwind](https://tailwindcss.com/) pour le styling : c’est un framework CSS qui fonctionne à base d’utilitaires de classes, nous y reviendrons dans le module sur le styling.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Votre mission, si vous l’acceptez, est de rendre l’application fonctionnelle pour :
 
-### `yarn test`
+- Créer de nouvelles tâches
+- Marquer des tâches comme “complétées”
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Les fichiers à modifier sont les suivants :
 
-### `yarn build`
+- `App.tsx`
+- `components/NewTask.tsx`
+- `components/ToDo.tsx`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Vous y trouverez des commentaires pour vous guider et vous donner quelques indices pour les parties les plus compliquées.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ce projet a été initialisé avec [Create React App](https://github.com/facebook/create-react-app).
 
-### `yarn eject`
+Pour récupérer le projet sur votre machine, positionnez vous dans le répertoire de votre choix dans un terminal et faites :
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+git clone https://github.com/CodingCr3w/react-todo-exercise.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Puis installer les dépendances et lancer le projet :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+yarn
+yarn start
+```
