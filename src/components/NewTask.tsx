@@ -11,6 +11,7 @@ export default function NewTask({ onAdd }: Props) {
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault()
     // 🎯 Si la longueur de "label" est supérieure à 0, appeler "onAdd"
+
     // 🎯 Réinitialiser le label à une chaîne vide pour faciliter l'ajout multiple de tâches
   }
 
@@ -21,7 +22,11 @@ export default function NewTask({ onAdd }: Props) {
         className="flex-1 border-b-2 py-2 pl-2"
         placeholder="What do you need to do today ?"
         // 🎯 Utiliser "label" comme value
-        // 🎯 Mettre à jour le label lors de changements (onChange)
+        // value={}
+        onChange={(event) => {
+          // 🎯 Mettre à jour le label lors de changements (onChange)
+          // 💡 La nouvelle valeur de l'input est dans event.target.value
+        }}
       />
       <button type="submit" className="bg-green-600 hover:bg-green-700 text-white px-4 rounded-md">
         Add

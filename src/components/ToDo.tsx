@@ -23,7 +23,9 @@ export default function ToDo({ task, onToggle }: Props) {
         name={taskId}
         id={taskId}
         // 🎯 Utiliser task.completed pour la prop "checked"
+        // checked={}
         // 🎯 Appeler onToggle avec l'ID de la tâche lors du "onChange"
+        // onChange={(event) => ...}
         className="appearance-none cursor-pointer border-2 p-2 rounded-sm checked:bg-green-600 checked:border-green-600"
       />
     </div>
